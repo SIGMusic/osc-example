@@ -3,9 +3,9 @@
 ###What you will need:
 
   - PureData Extended
-  - Python
-    - pyOSC
-    - simpleOSC
+  - Python - http://www.python.org/getit/
+    - pyOSC - https://trac.v2.nl/wiki/pyOSC
+    - simpleOSC - http://ixi-audio.net/content/download/SimpleOSC_0.3.2.zip
 
 ###Installation Instructions:
 
