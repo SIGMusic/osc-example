@@ -10,3 +10,5 @@ sendOSCMsg("/vol", [0.05])
 sendOSCMsg("/bypass", [1])
 sendOSCMsg("/freq", [440])
 sendOSCMsg("/bang", [1])
+
+print "Hellow!"
