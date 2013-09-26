@@ -1,4 +1,4 @@
-#N canvas 997 256 740 563 10;
+#N canvas 270 116 1038 732 10;
 #X declare -lib mrpeach;
 #X obj 65 268 dac~;
 #X obj 66 148 *~;
@@ -25,21 +25,21 @@
 #X obj 338 244 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 529 85 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -4032
--1 -1 7100 1;
+-1 -1 8900 1;
 #X floatatom 526 104 5 0 0 0 - - -;
 #X obj 457 126 expr 1-$f1;
 #X obj 529 27 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -260097
--1 -1 9900 1;
+-1 -1 6400 1;
 #X floatatom 526 47 5 0 0 0 - - -;
-#X floatatom 427 -27 5 0 0 0 - - -;
+#X floatatom 359 -25 5 0 0 0 - - -;
 #X text 576 112 Wet signal to dry signal ratio;
 #X text 576 128 (0 : all dry \, 1 : all wet);
 #X text 577 47 Damping level;
 #X text 576 -7 Roomize;
-#X obj 407 -61 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11500 1;
+#X obj 433 -79 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7300 1;
 #X obj 86 119 *~;
-#X obj 163 -41 routeOSC /vol /freq /bang /bypass;
+#X obj 125 -51 routeOSC /vol /freq /bang /bypass /roomsize;
 #X connect 1 0 12 0;
 #X connect 2 0 33 0;
 #X connect 3 0 2 0;
@@ -65,6 +65,7 @@
 #X connect 23 0 16 0;
 #X connect 24 0 14 0;
 #X connect 24 0 25 0;
+#X connect 26 0 13 0;
 #X connect 31 0 13 0;
 #X connect 31 0 26 0;
 #X connect 32 0 1 1;
@@ -73,3 +74,4 @@
 #X connect 33 1 7 0;
 #X connect 33 2 11 0;
 #X connect 33 3 20 0;
+#X connect 33 4 26 0;
